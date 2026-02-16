@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Lamaran Pekerjaan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #eaeff2;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .paper {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        /* Header dengan Foto */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Membuat foto jadi lingkaran */
+            object-fit: cover;
+            border: 3px solid #2c3e50;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Isi Surat */
+        .content {
+            text-align: justify;
+            color: #333;
+        }
+
+        .date { margin-bottom: 20px; }
+        .recipient { margin-bottom: 30px; }
+        
+        .signature {
+            margin-top: 40px;
+        }
+
+        /* CSS khusus saat dicetak (Print Mode) */
+        @media print {
+            body { background: none; padding: 0; }
+            .paper { box-shadow: none; width: 100%; padding: 0; }
+            header { border-bottom-color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="paper">
+    <header>
+        <div class="header-text">
+            <h1>Reyhan Ghofar Anggoro</h1>
+            <div class="contact-info">
+                <p>📍 Karawang, Indonesia</p>
+                <p>📧 reyhanghfra@gmail.com | 📞 0812-3456-7890</p>
+                <p>🌐 linkedin.com/in/reyhanghfra</p>
+            </div>
+        </div>
+        <img src="foto_profil.JPEG" alt="Foto Profil" class="profile-img">
+    </header>
+
+    <main class="content">
+        <p class="date">Karawang, 16 Februari 2026</p>
+
+        <div class="recipient">
+            <p><strong>Yth. Bapak/Ibu HRD</strong><br>
+            PT. Inovasi Digital Indonesia<br>
+            Gedung Tech Center, Lt. 5<br>
+            Jakarta Pusat</p>
+        </div>
+
+        <p><strong>Perihal: Lamaran Pekerjaan - Web Developer</strong></p>
+
+        <p>Dengan hormat,</p>
+
+        <p>Saya menulis surat ini untuk mengekspresikan ketertarikan saya pada posisi <strong>Web Developer</strong> yang sedang dibuka di PT. Inovasi Digital Indonesia. Sebagai pengembang yang berfokus pada hasil, saya sangat mengagumi produk-produk teknologi yang telah perusahaan Bapak/Ibu kembangkan.</p>
+
+        <p>Selama 2 tahun terakhir, saya telah mendalami pengembangan *frontend* menggunakan teknologi HTML5, CSS3, dan React. Saya yakin bahwa kemampuan teknis serta kemauan saya untuk terus belajar akan memberikan nilai tambah yang signifikan bagi tim Anda.</p>
+
+        <p>Terlampir saya sertakan CV dan Portofolio untuk Bapak/Ibu tinjau. Saya sangat menantikan kesempatan untuk mendiskusikan bagaimana pengalaman saya dapat membantu mencapai tujuan perusahaan.</p>
+
+        <p>Terima kasih atas waktu dan pertimbangannya.</p>
+
+        <div class="signature">
+            <p>Hormat saya,</p>
+            <br><br>
+            <p><strong>Reyhan Ghofar Anggoro</strong></p>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
